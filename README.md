@@ -51,3 +51,29 @@ The application automates business decisions based on the predicted probability:
 ### **Architecture & Deployment**
 
 The project follows a standard MLOps-ready structure:
+Customer-Churn-Predictor/ ├── app/ │ └── app.py # Streamlit Application Code ├── models/ │ └── churn_predictor_log_reg.pkl # Trained ML Model ├── notebooks/ │ └── 1.0_Data_Exploration.ipynb # EDA, Preprocessing, & Training ├── requirements.txt # List of dependencies for deployment
+
+### **How to Run Locally**
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Srijita-3/Customer-Churn-Prediction-System.git](https://github.com/Srijita-3/Customer-Churn-Prediction-System.git)
+    cd Customer-Churn-Prediction-System
+    ```
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\activate  # Windows
+    # source venv/bin/activate # macOS/Linux
+    ```
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the Streamlit application:**
+    ```bash
+    streamlit run app/app.py
+    ```
+    The application will open in your default web browser at `http://localhost:8501`.
+
+---
