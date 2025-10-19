@@ -48,19 +48,11 @@ The application automates business decisions based on the predicted probability:
 * **Model:** **Logistic Regression**. Chosen for its stability and interpretability (coefficient analysis).
 * **Metrics:** Focused on achieving high **Precision** (minimizing false positives to avoid wasting retention efforts) and **Recall** (minimizing false negatives to catch as many at-risk customers as possible).
 
-### **Architecture & Deployment:**
+## 🏗️ Architecture & Deployment
 
-customer-churn-predictor/
-├── app/
-│   └── app.py            # Streamlit Application Code (Live App Interface)
-├── models/
-│   └── churn_predictor_log_reg.pkl # Trained ML Model (Logistic Regression)
-├── notebooks/
-│   └── 1.0_Data_Exploration.ipynb  # EDA, Preprocessing, and Model Training
-├── data/
-│   └── WA_Fn-UseC_...csv   # Raw Dataset
-└── requirements.txt      # Lists all Python dependencies for the deployment server
+The project follows a standard MLOps-ready structure, separating the application code, the trained model, and the development work. The structure is ideal for continuous deployment on platforms like Streamlit Cloud .
 
+### **Project Structure**
 ### **How to Run Locally**
 
 1.  **Clone the repository:**
